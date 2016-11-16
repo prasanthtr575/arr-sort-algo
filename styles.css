@@ -12,3 +12,20 @@ h2, h3 {
 body {
   margin: 2em;
 }
+.arrBxsContainer {
+  display: -webkit-flex;
+  display: flex;
+}
+.arrBx {
+  flex: 1;
+  text-align: center;
+  margin: 0px 10px 0px 10px;
+}
+.ascBx {
+  background-color: lightpink
+}
+.descBx {
+  background-color: lightgreen;
+}
+
+

@@ -1,0 +1,48 @@
+<div class="container">
+  <h1>Sorting</h1>
+  <div class="form-group">
+    <label for="comment">Enter an array</label>
+    <textarea [(ngModel)]="arrStr" class="form-control" rows="5" id="comment"></textarea>
+  </div>
+  <button type="button" class="btn btn-primary" (click)="onEnter()"> Create & Sort array</button>
+  <hr>
+  <div class="arrBxsContainer">
+    <div class="arrBx">
+      <h3>ASC</h3>
+      <ul class="list-group">
+        <li *ngFor="let el of ascArr" class="list-group-item">{{el}}</li>
+      </ul>
+   </div>
+    <div class="arrBx">
+      <h3>DESC</h3>
+      <ul class="list-group">
+        <li *ngFor="let el of descArr" class="list-group-item">{{el}}</li>
+      </ul>
+    </div>
+  </div>
+  <hr>
+  <table class="table table-bordered">
+    <thead>
+      <tr>
+        <th></th>        
+        <th>Bubble</th>
+        <th>Quick</th>
+        <th>Heap</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><b>ASC</b></td>
+        <td>12</td>
+        <td>67</td>
+        <td>59</td>
+      </tr>
+      <tr>
+        <td><b>DESC</b></td>
+        <td>12</td>
+        <td>67</td>
+        <td>59</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
